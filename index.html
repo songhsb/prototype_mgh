@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>팀 무계획</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="mytitle">
+        team
+        <h1>무계획</h1>
+    </div>
+    <div class="mybody">
+        <div>
+            <h2>우리 팀만의 특징과 추구하는 궁극적인 목표</h2>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi et ipsam, optio qui unde sequi asperiores,
+            beatae ad voluptates facere impedit velit illo vero nemo amet inventore! Ab, et dolorem.
+            Reprehenderit dolorem nemo assumenda aliquid quos sint cupiditate quisquam vero. Velit adipisci harum culpa
+            libero nihil nostrum, blanditiis ipsum repellat pariatur quisquam voluptatum dignissimos et accusantium ab
+            officia, quod ad.
+        </div>
+        <div>
+            <h2>우리 팀의 약속</h2>
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae excepturi recusandae officia consectetur,
+            earum aperiam at eius eum optio sunt eaque. Harum ut perferendis debitis eos non, eius suscipit aliquam.
+            Molestias distinctio ipsam repellat facere quam quibusdam ipsum laboriosam illo esse asperiores at
+            consequuntur, corporis porro, dolores neque quaerat maiores! Veritatis nisi nostrum ipsam dolorem
+            accusantium doloribus corporis dolor numquam!
+            Deleniti distinctio commodi excepturi eligendi ducimus mollitia sint accusantium tempora ex iure earum,
+            fugiat quod. Dolore nihil officia earum atque. Officiis alias eum maiores quis iusto quibusdam dolore nam
+            temporibus.
+        </div>
+    </div>
+
+    <div class="myteam">
+        <div class="team">
+            <div class="team-img">
+                <img src="..." alt="img" class="profil">
+            </div>
+            <div class="team-body">
+                <p>이름</p>
+                <p>자신의 장점</p>
+                <p>협업 스타일</p>
+                <a href="http://www.naver.com">블로그</a>
+            </div>
+        </div>
+        <div class="team">
+            <div class="team-img">
+                <img src="..." alt="img" class="profil">
+            </div>
+            <div class="team-body">
+                <p>이름</p>
+                <p>자신의 장점</p>
+                <p>협업 스타일</p>
+                <a href="http://www.naver.com">블로그</a>
+            </div>
+        </div>
+        <div class="team">
+            <div class="team-img">
+                <img src="..." alt="img" class="profil">
+            </div>
+            <div class="team-body">
+                <p>이름</p>
+                <p>자신의 장점</p>
+                <p>협업 스타일</p>
+                <a href="http://www.naver.com">블로그</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 모달창은 부트스트랩 사용 -->
+    <div class="mybutton">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            나를 소개합니다
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">나를 소개합니다!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mypost">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name">
+                            <label for="floatingInput">이름</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="advantages"></textarea>
+                            <label for="floatingTextarea">자신의 장점</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="cooperation"></textarea>
+                            <label for="floatingTextarea">협업 스타일</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="Image">
+                            <label for="floatingInput">img_link</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="blog">
+                            <label for="floatingInput">블로그</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">취소하기</button>
+                    <button type="button" class="btn">등록하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
